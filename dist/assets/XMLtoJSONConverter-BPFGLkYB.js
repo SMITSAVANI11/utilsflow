@@ -1,0 +1,1 @@
+import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./JsonXmlConverter-C5KVgxXL.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};

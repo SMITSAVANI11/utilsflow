@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PWA Renderer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="m-0 p-0 bg-black flex flex-col gap-10 font-sans">
+    <!-- PWA Icon 192 -->
+    <div id="icon192" class="w-[192px] h-[192px] bg-white flex items-center justify-center">
+      <img class="w-[150px] h-[150px] object-contain" src="favicon.svg" alt="PWA Icon 192" />
+    </div>
+
+    <!-- PWA Icon 512 -->
+    <div id="icon512" class="w-[512px] h-[512px] bg-white flex items-center justify-center">
+      <img class="w-[400px] h-[400px] object-contain" src="favicon.svg" alt="PWA Icon 512" />
+    </div>
+
+    <!-- Social OG Image -->
+    <div
+      id="ogimage"
+      class="w-[1024px] h-[1024px] bg-[radial-gradient(circle_at_center,_#16162a_0%,_#08080f_100%)] flex flex-col items-center justify-center relative overflow-hidden box-border border-[8px] border-[#23233c]"
+    >
+      <!-- Background decorative glow -->
+      <div
+        class="absolute w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(124,_58,_237,_0.15)_0%,_rgba(0,_0,_0,_0)_70%)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none"
+      ></div>
+
+      <!-- OG Content -->
+      <div class="relative z-20 flex flex-col items-center text-center">
+        <img
+          class="h-[120px] mb-[50px] invert hue-rotate-180 brightness-125 contrast-110"
+          src="src/assets/UtilsflowLogo.png"
+          alt="UtilsFlow Logo"
+        />
+        <div
+          class="bg-gradient-to-br from-[#7c3aed] to-[#4f46e5] text-white text-xl font-bold px-6 py-2.5 rounded-full tracking-wider uppercase shadow-[0_4px_20px_rgba(124,58,237,0.4)] mb-[30px]"
+        >
+          141+ Free Online Utilities
+        </div>
+        <h1 class="text-white text-[56px] font-extrabold mb-5 tracking-tight">
+          Your Premium Tool Hub
+        </h1>
+        <p class="text-[#94a3b8] text-2xl max-w-[700px] leading-relaxed font-normal">
+          Calculators, converters, generators, developer utilities, PDF and SEO tools. 100% free, no
+          signup required.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

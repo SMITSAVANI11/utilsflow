@@ -1,0 +1,42 @@
+{
+  "name": "utilsflow",
+  "version": "2.0.0",
+  "description": "UtilsFlow — 141+ free online tools in one place. No login, no signup.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write src/**/*.{js,jsx,css}"
+  },
+  "keywords": [
+    "tools",
+    "react",
+    "vite",
+    "productivity",
+    "free-tools",
+    "online-tools"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "lucide-react": "^1.18.0",
+    "marked": "^15.0.12",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.17.0",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "eslint": "^10.5.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "vite": "^8.0.16",
+    "vite-plugin-pwa": "^1.0.0"
+  }
+}
