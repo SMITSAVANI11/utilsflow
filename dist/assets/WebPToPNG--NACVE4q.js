@@ -1,0 +1,1 @@
+import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./ImageConverter-BfYPXPwv.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`webp-to-png`,title:`WebP to PNG Converter`,description:`Convert next-gen WebP images to standard lossless PNG format online instantly. Perfect compatibility for older platforms.`,allowedFrom:`webp`,defaultTo:`png`})}export{r as default};

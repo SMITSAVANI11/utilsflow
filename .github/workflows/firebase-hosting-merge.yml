@@ -30,4 +30,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_UTILSFLOW }}
           channelId: live
           projectId: utilsflow
-
