@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./URLSEOStudio-BboETHx_.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`parser`})}export{r as default};

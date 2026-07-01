@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./KeywordResearchStudio-Df0Td-0b.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`related`})}export{r as default};

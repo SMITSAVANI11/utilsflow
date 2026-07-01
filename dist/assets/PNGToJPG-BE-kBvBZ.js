@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./ImageConverter-BfYPXPwv.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`png-to-jpg`,title:`PNG to JPG Converter`,description:`Convert PNG images to JPG format online instantly. Compress and adjust image quality client-side without uploading to any server.`,allowedFrom:`png`,defaultTo:`jpeg`})}export{r as default};

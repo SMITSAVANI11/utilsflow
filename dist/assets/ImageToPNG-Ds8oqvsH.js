@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./ImageConverter-BfYPXPwv.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-to-png`,title:`Image to PNG Converter`,description:`Convert JPG, WebP, GIF, BMP, and other image formats to high-quality PNG. 100% free and runs completely in your browser.`,allowedFrom:`any`,defaultTo:`png`})}export{r as default};

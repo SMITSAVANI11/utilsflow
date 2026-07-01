@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://utilsflow.com/sitemap.xml
+Sitemap: https://utilsflow.web.app/sitemap.xml

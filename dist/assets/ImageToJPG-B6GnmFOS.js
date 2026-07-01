@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./ImageConverter-BfYPXPwv.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-to-jpg`,title:`Image to JPG Converter`,description:`Convert PNG, WebP, GIF, BMP, and other image formats to JPG. Customize image quality and file compression settings client-side.`,allowedFrom:`any`,defaultTo:`jpeg`})}export{r as default};

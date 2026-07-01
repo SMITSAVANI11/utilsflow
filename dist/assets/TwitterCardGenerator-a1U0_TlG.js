@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./MetaTagStudio-eL4CBvXy.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`twitter`})}export{r as default};

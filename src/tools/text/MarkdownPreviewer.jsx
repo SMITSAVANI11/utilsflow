@@ -10,7 +10,7 @@ const SAMPLE = `# Welcome to Markdown Previewer
 ## Features
 - **Bold text** and *italic text*
 - ~~Strikethrough~~ text
-- [Links](https://utilsflow.com)
+- [Links](https://utilsflow.web.app)
 - Inline \`code\` and code blocks
 
 ## Code Example

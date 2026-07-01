@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{WordCounter as t}from"./WordCounter-vMJyUPat.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};

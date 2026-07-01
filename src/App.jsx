@@ -11,6 +11,10 @@ import LoadingSpinner from "./components/LoadingSpinner.jsx";
 
 // Pages
 const Home = lazy(() => import("./pages/Home.jsx"));
+const AboutUs = lazy(() => import("./pages/AboutUs.jsx"));
+const ContactUs = lazy(() => import("./pages/ContactUs.jsx"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.jsx"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService.jsx"));
 
 // 📸 Image Tools
 const ColorPalette = lazy(() => import("./tools/image/ColorPalette.jsx"));
@@ -228,6 +232,10 @@ function App() {
           <main id="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<TermsOfService />} />
 
               {/* 🎨 Creative */}
               <Route path="/tools/color-palette" element={<ColorPalette />} />

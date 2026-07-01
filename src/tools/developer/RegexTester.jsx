@@ -37,7 +37,7 @@ const workerCode = `
 function RegexTester() {
   const [pattern, setPattern] = useState("");
   const [flags,   setFlags]   = useState("g");
-  const [testStr, setTestStr] = useState("Test your regex here. Email: hello@example.com, URL: https://utilsflow.com");
+  const [testStr, setTestStr] = useState("Test your regex here. Email: hello@example.com, URL: https://utilsflow.web.app");
   const [matches, setMatches] = useState([]);
   const [error,   setError]   = useState("");
   const [evaluating, setEvaluating] = useState(false);

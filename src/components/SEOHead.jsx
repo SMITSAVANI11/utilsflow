@@ -1,7 +1,7 @@
 // SEOHead.jsx — Per-page SEO using react-helmet-async
 import { Helmet } from "react-helmet-async";
 
-const SITE = "https://utilsflow.com";
+const SITE = "https://utilsflow.web.app";
 
 function SEOHead({ title, description, path = "", ogImage = "/og-image.png" }) {
   const fullTitle = title ? `${title} — UtilsFlow` : "UtilsFlow — 140+ Free Online Utilities";
