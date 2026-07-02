@@ -1,0 +1,1 @@
+import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./SiteConfigurationStudio-DKyxj1NZ.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`robots`})}export{r as default};

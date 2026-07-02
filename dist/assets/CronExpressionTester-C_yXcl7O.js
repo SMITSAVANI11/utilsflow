@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./CronStudio-DImptw7c.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`tester`})}export{r as default};

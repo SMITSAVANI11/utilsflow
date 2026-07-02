@@ -1,0 +1,1 @@
+import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./URLSEOStudio-DS9VTlvI.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`mobile`})}export{r as default};

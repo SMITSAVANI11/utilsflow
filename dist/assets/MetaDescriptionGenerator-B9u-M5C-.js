@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./MetaTagStudio-DX62l1x6.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`serp`})}export{r as default};
