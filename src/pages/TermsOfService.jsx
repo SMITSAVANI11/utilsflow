@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { XCircle } from "lucide-react";
 import SEOHead from "../components/SEOHead";
 
 const LAST_UPDATED = "July 1, 2026";
@@ -39,7 +40,7 @@ const sections = [
         <ul className="list-none flex flex-col gap-2 text-sm">
           {[
             "Use the service for any illegal, fraudulent, or harmful activity",
-            "Attempt to disrupt, hack, or gain unauthorised access to our website or servers",
+            "Attempt to disrupt, hack, or gain unauthorized access to our website or servers",
             "Use automated bots or scrapers to overload or abuse our services",
             "Circumvent, disable, or interfere with security-related features of the website",
             "Upload, post, or transmit any content that is unlawful, defamatory, abusive, or otherwise objectionable",
@@ -47,7 +48,8 @@ const sections = [
             "Misrepresent your identity or affiliation when contacting us",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
-              <span className="text-red-400 mt-0.5">✗</span> {item}
+              <XCircle className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
+              <span>{item}</span>
             </li>
           ))}
         </ul>

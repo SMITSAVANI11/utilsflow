@@ -1,27 +1,28 @@
 import SEOHead from "../components/SEOHead";
+import { Mail, Phone, MapPin, Send, HelpCircle } from "lucide-react";
 
 const contactDetails = [
-  { icon: "📧", label: "Email Address", value: "savanismt11@gmail.com", href: "mailto:savanismt11@gmail.com" },
-  { icon: "📱", label: "Phone Number", value: "+91 87589 38736", href: "tel:+918758938736" },
-  { icon: "📍", label: "Location", value: "Katargam, Surat, Gujarat, India — 395004", href: null },
+  { icon: Mail, label: "Email Address", value: "savanismt11@gmail.com", href: "mailto:savanismt11@gmail.com" },
+  { icon: Phone, label: "Phone Number", value: "+91 87589 38736", href: "tel:+918758938736" },
+  { icon: MapPin, label: "Location", value: "Katargam, Surat, Gujarat, India — 395004", href: null },
 ];
 
 const faqs = [
   {
     q: "Are all tools on UtilsFlow free?",
-    a: "Yes, every single tool on UtilsFlow is completely free to use. No subscription, no credit card, no hidden fees.",
+    a: "Yes, every single tool on UtilsFlow is completely free to use. No subscriptions, credit cards, or hidden fees.",
   },
   {
     q: "Do I need to create an account?",
-    a: "No. UtilsFlow requires zero registration. Just open any tool and start using it immediately.",
+    a: "No. UtilsFlow requires zero registration. Open any tool and start using it immediately.",
   },
   {
-    q: "Is my data safe when I use your tools?",
-    a: "Absolutely. All tools run locally in your browser. Your files and data are never uploaded to or stored on our servers.",
+    q: "Is my data safe when using your tools?",
+    a: "Absolutely. All tools run locally inside your browser. Your files and data are never uploaded to or stored on our servers.",
   },
   {
     q: "How can I request a new tool?",
-    a: "Send us an email at savanismt11@gmail.com with your tool idea. We review all suggestions and try to add the most requested ones.",
+    a: "Send us an email with your tool idea. We review all suggestions and regularly add top-requested utilities.",
   },
 ];
 
@@ -42,46 +43,53 @@ export default function ContactUs() {
             Get in Touch
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-text-primary leading-tight mb-5">
-            We're Here to{" "}
-            <span className="text-primary-light">Help You</span>
+            We're Here to <span className="text-primary-light">Help You</span>
           </h1>
           <p className="text-text-secondary text-lg leading-relaxed max-w-[580px] mx-auto">
-            Have a question, a suggestion, or found a bug? Send us a message and we'll get back to you as soon as possible.
+            Have a question, suggestion, or bug report? Send us a message and we'll respond promptly.
           </p>
         </div>
 
         {/* Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
-          {contactDetails.map((c) => (
-            <div
-              key={c.label}
-              className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-primary/30 hover:bg-primary/5 transition-all duration-300"
-            >
-              <div className="text-3xl mb-3">{c.icon}</div>
-              <div className="text-xs uppercase tracking-widest text-text-muted font-semibold mb-2">{c.label}</div>
-              {c.href ? (
-                <a href={c.href} className="text-primary-light font-semibold text-sm hover:underline break-all">
-                  {c.value}
-                </a>
-              ) : (
-                <span className="text-text-secondary text-sm">{c.value}</span>
-              )}
-            </div>
-          ))}
+          {contactDetails.map((c) => {
+            const Icon = c.icon;
+            return (
+              <div
+                key={c.label}
+                className="bg-bg-card border border-border/80 rounded-2xl p-6 text-center hover:border-primary/30 hover:bg-bg-card-hover transition-all duration-300 flex flex-col items-center justify-between"
+              >
+                <div className="w-10 h-10 rounded-xl bg-primary-glow-heavy border border-primary/20 flex items-center justify-center text-primary mb-3">
+                  <Icon className="w-5 h-5" />
+                </div>
+                <div className="text-xs uppercase tracking-widest text-text-muted font-semibold mb-2">{c.label}</div>
+                {c.href ? (
+                  <a href={c.href} className="text-primary-light font-semibold text-sm hover:underline break-all">
+                    {c.value}
+                  </a>
+                ) : (
+                  <span className="text-text-secondary text-sm">{c.value}</span>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Email CTA Block */}
         <div className="bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 rounded-2xl p-8 md:p-10 text-center mb-14">
-          <div className="text-4xl mb-4">✉️</div>
+          <div className="w-12 h-12 rounded-2xl bg-primary-glow-heavy border border-primary/20 flex items-center justify-center text-primary mx-auto mb-4">
+            <Send className="w-6 h-6" />
+          </div>
           <h2 className="text-2xl font-bold text-text-primary mb-3">Send Us an Email</h2>
           <p className="text-text-secondary mb-6 max-w-[480px] mx-auto">
-            For support, bug reports, tool requests, or any general queries, simply email us and we will respond within 1–2 business days.
+            For support, bug reports, or feature requests, email us directly and we will respond within 1–2 business days.
           </p>
           <a
             href="mailto:savanismt11@gmail.com"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-7 py-3 rounded-xl transition-all duration-200 hover:-translate-y-0.5 no-underline"
           >
-            📧 savanismt11@gmail.com
+            <Mail className="w-4.5 h-4.5" />
+            <span>savanismt11@gmail.com</span>
           </a>
         </div>
 
@@ -91,10 +99,13 @@ export default function ContactUs() {
           {faqs.map((f, i) => (
             <div
               key={i}
-              className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 hover:border-primary/20 transition-all duration-300"
+              className="bg-bg-card border border-border/80 rounded-2xl p-6 hover:border-primary/20 transition-all duration-300"
             >
-              <h3 className="text-base font-bold text-text-primary mb-2">❓ {f.q}</h3>
-              <p className="text-text-secondary text-sm leading-relaxed">{f.a}</p>
+              <h3 className="text-base font-bold text-text-primary mb-2 flex items-center gap-2">
+                <HelpCircle className="w-4 h-4 text-primary shrink-0" />
+                <span>{f.q}</span>
+              </h3>
+              <p className="text-text-secondary text-sm leading-relaxed pl-6">{f.a}</p>
             </div>
           ))}
         </div>

@@ -1,4 +1,3 @@
-// LoadingSpinner.jsx — Shown while lazy routes are loading
 function LoadingSpinner() {
   return (
     <div

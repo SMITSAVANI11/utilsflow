@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { Search } from "lucide-react";
+import CategoryIcon from "./CategoryIcon";
 import { useAppContext } from "../context/AppContext";
 import { tools } from "../data/tools";
 
@@ -113,7 +115,7 @@ function CommandPalette() {
             borderBottom: "1px solid rgba(63, 63, 70, 0.4)",
           }}
         >
-          <span style={{ fontSize: "18px", opacity: 0.5 }}>🔍</span>
+          <Search style={{ width: "18px", height: "18px", opacity: 0.5 }} />
           <input
             ref={inputRef}
             type="text"
@@ -197,9 +199,9 @@ function CommandPalette() {
                 transition: "all 0.15s",
               }}
             >
-              <span style={{ fontSize: "22px", flexShrink: 0 }} aria-hidden="true">
-                {tool.emoji}
-              </span>
+              <div style={{ width: "32px", height: "32px", borderRadius: "8px", background: "rgba(99,102,241,0.15)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <CategoryIcon categoryId={tool.category} className="w-4 h-4 text-primary" />
+              </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <p
                   style={{

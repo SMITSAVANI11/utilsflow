@@ -1,0 +1,1 @@
+import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./ImageEditor-DMQRr4-s.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-blur`,title:`Image Blur`,description:`Apply a smooth Gaussian blur effect to your images. Customize blur radius with a live preview.`,defaultTab:`adjust`})}export{r as default};

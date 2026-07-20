@@ -1,5 +1,7 @@
 // ToolCard.jsx — Card with favorite button and a11y
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import CategoryIcon from "./CategoryIcon";
 import { useAppContext } from "../context/AppContext";
 import { useState } from "react";
 
@@ -20,30 +22,27 @@ function ToolCard({ tool }) {
   return (
     <Link
       to={tool.path}
-      className="group bg-bg-card border border-border rounded-[12px] p-[22px] cursor-pointer transition-all duration-300 relative overflow-hidden no-underline flex flex-col h-full hover:border-primary hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.25),0_0_20px_var(--primary-glow-heavy)] focus-visible:outline-2 focus-visible:outline-primary-light focus-visible:outline-offset-3"
+      className="group bg-bg-card border border-border rounded-[12px] p-[22px] cursor-pointer transition-all duration-200 no-underline flex flex-col h-full hover:border-primary hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-primary-light focus-visible:outline-offset-3"
       aria-label={`${tool.name} — ${tool.description}`}
     >
-      {/* Background glow overlay */}
-      <div className="absolute inset-0 rounded-[12px] bg-primary-glow opacity-0 transition-opacity duration-300 pointer-events-none group-hover:opacity-100" />
-
       {/* HEADER */}
       <div className="flex justify-between items-start mb-3.5 z-10">
         <div
-          className="w-[52px] h-[52px] bg-primary-glow-heavy rounded-[14px] flex items-center justify-center text-[26px] shrink-0 transition-transform duration-300 group-hover:scale-108 group-hover:-rotate-3"
+          className="w-12 h-12 bg-primary-glow-heavy border border-primary/20 rounded-[14px] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-105"
           aria-hidden="true"
         >
-          {tool.emoji}
+          <CategoryIcon categoryId={tool.category} className="w-6 h-6 text-primary" />
         </div>
 
         <div className="flex flex-col gap-1 items-end">
           {tool.isPopular && (
             <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-warning">
-              🔥 Popular
+              Popular
             </span>
           )}
           {tool.isNew && (
             <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/20 text-success">
-              ✨ New
+              New
             </span>
           )}
         </div>
@@ -91,8 +90,8 @@ function ToolCard({ tool }) {
             {fav ? "❤️" : "🤍"}
           </button>
 
-          <div className="w-7 h-7 flex items-center justify-center leading-none pt-[2px] bg-primary-glow-heavy rounded-full text-primary shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:translate-x-[3px]">
-            →
+          <div className="w-7 h-7 flex items-center justify-center bg-primary-glow-heavy rounded-full text-primary shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:translate-x-1">
+            <ArrowRight className="w-3.5 h-3.5" />
           </div>
         </div>
       </div>

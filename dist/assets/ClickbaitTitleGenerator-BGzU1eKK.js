@@ -1,1 +1,0 @@
-import{l as e}from"./vendor-aVKic6MI.js";import{t}from"./HeadlineGeneratorStudio-D8pBcbGM.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`clickbait`})}export{r as default};

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CheckCircle2, AlertCircle } from "lucide-react";
 import SEOHead from "../components/SEOHead";
 
 const LAST_UPDATED = "July 1, 2026";
@@ -25,7 +26,8 @@ const sections = [
             "Device type (desktop, tablet, mobile)",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
-              <span className="text-primary-light mt-0.5">✓</span> {item}
+              <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+              <span>{item}</span>
             </li>
           ))}
         </ul>
@@ -44,14 +46,17 @@ const sections = [
           UtilsFlow displays advertisements through <strong className="text-text-primary">Google AdSense</strong>, a third-party advertising service operated by Google LLC. To serve relevant ads, Google may use cookies and similar tracking technologies.
         </p>
         <p className="text-text-secondary leading-relaxed mb-4">
-          Google AdSense may collect and use data to show you personalised advertisements based on your browsing history, interests, and demographics. This is governed by{" "}
+          Google AdSense may collect and use data to show you personalized advertisements based on your browsing history, interests, and demographics. This is governed by{" "}
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:underline">
             Google's Privacy Policy
           </a>.
         </p>
         <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 my-4">
           <p className="text-text-secondary text-sm leading-relaxed">
-            <strong className="text-text-primary">⚠️ Important:</strong> Google uses the DoubleClick cookie to serve ads based on a user's previous visits to our website and other websites on the Internet. You may opt out of the use of the DoubleClick cookie for interest-based advertising by visiting{" "}
+            <strong className="text-text-primary inline-flex items-center gap-1 mr-1">
+              <AlertCircle className="w-4 h-4 text-amber-400 shrink-0" /> Important:
+            </strong>
+            Google uses the DoubleClick cookie to serve ads based on a user's previous visits to our website and other websites on the Internet. You may opt out of the use of the DoubleClick cookie for interest-based advertising by visiting{" "}
             <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:underline">
               Google Ads Settings
             </a>.

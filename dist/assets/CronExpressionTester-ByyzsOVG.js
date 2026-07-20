@@ -1,0 +1,1 @@
+import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./CronStudio-BRsLA9fl.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`tester`})}export{r as default};

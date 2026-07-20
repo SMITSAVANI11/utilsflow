@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "vite build && npx firebase-tools deploy --only hosting",
     "lint": "eslint src --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write src/**/*.{js,jsx,css}"
   },

@@ -55,11 +55,10 @@ function Navbar() {
               <li key={link.path} role="listitem">
                 <Link
                   to={link.path}
-                  className={`px-4 py-2 rounded-full text-[13.5px] font-semibold transition-all duration-200 ${
-                    isActive(link)
-                      ? "text-primary-light bg-primary-glow-heavy border border-primary/20"
-                      : "text-text-secondary hover:text-text-primary hover:bg-text-primary/5"
-                  }`}
+                  className={`px-4 py-2 rounded-full text-[13.5px] font-semibold transition-all duration-200 ${isActive(link)
+                    ? "text-primary-light bg-primary-glow-heavy border border-primary/20"
+                    : "text-text-secondary hover:text-text-primary hover:bg-text-primary/5"
+                    }`}
                   aria-current={isActive(link) ? "page" : undefined}
                 >
                   {link.label}
@@ -74,9 +73,8 @@ function Navbar() {
               {ACCENTS.map((acc) => (
                 <button
                   key={acc.name}
-                  className={`w-3.5 h-3.5 rounded-full border border-white/15 cursor-pointer p-0 transition-all duration-200 relative hover:scale-125 hover:border-white/50 ${
-                    accent === acc.name ? "active scale-130 border-white shadow-[0_0_10px_var(--primary)]" : ""
-                  }`}
+                  className={`w-3.5 h-3.5 rounded-full border border-white/15 cursor-pointer p-0 transition-all duration-200 relative hover:scale-125 hover:border-white/50 ${accent === acc.name ? "active scale-130 border-white shadow-[0_0_10px_var(--primary)]" : ""
+                    }`}
                   style={{ backgroundColor: acc.color }}
                   onClick={() => setAccent(acc.name)}
                   aria-label={`Switch to ${acc.name} accent`}
@@ -124,11 +122,10 @@ function Navbar() {
       {/* Mobile menu */}
       <div
         id="mobile-menu"
-        className={`fixed top-[80px] left-1/2 -translate-x-1/2 w-[92%] max-w-[400px] bg-navbar-bg/95 border border-border rounded-3xl p-5 flex flex-col gap-1.5 z-[999] backdrop-blur-[24px] shadow-2xl transition-all duration-300 ${
-          menuOpen
-            ? "opacity-100 scale-100 pointer-events-auto visible"
-            : "opacity-0 scale-95 pointer-events-none invisible"
-        }`}
+        className={`fixed top-[80px] left-1/2 -translate-x-1/2 w-[92%] max-w-[400px] bg-navbar-bg/95 border border-border rounded-3xl p-5 flex flex-col gap-1.5 z-[999] backdrop-blur-[24px] shadow-2xl transition-all duration-300 ${menuOpen
+          ? "opacity-100 scale-100 pointer-events-auto visible"
+          : "opacity-0 scale-95 pointer-events-none invisible"
+          }`}
         role="navigation"
         aria-label="Mobile navigation"
         aria-hidden={!menuOpen}
@@ -138,11 +135,10 @@ function Navbar() {
             key={link.path}
             to={link.path}
             onClick={() => setMenuOpen(false)}
-            className={`py-2.5 px-4 rounded-xl text-[14.5px] font-semibold transition-all duration-200 ${
-              isActive(link)
-                ? "text-primary-light bg-primary-glow-heavy border border-primary/20"
-                : "text-text-secondary hover:text-text-primary hover:bg-text-primary/5"
-            }`}
+            className={`py-2.5 px-4 rounded-xl text-[14.5px] font-semibold transition-all duration-200 ${isActive(link)
+              ? "text-primary-light bg-primary-glow-heavy border border-primary/20"
+              : "text-text-secondary hover:text-text-primary hover:bg-text-primary/5"
+              }`}
             aria-current={isActive(link) ? "page" : undefined}
           >
             {link.label}
@@ -154,9 +150,8 @@ function Navbar() {
           {ACCENTS.map((acc) => (
             <button
               key={acc.name}
-              className={`w-5.5 h-5.5 rounded-full border border-text-primary/15 cursor-pointer p-0 transition-all duration-200 relative hover:scale-125 hover:border-text-primary/40 ${
-                accent === acc.name ? "scale-130 border-text-primary shadow-[0_0_10px_var(--primary)]" : ""
-              }`}
+              className={`w-5.5 h-5.5 rounded-full border border-text-primary/15 cursor-pointer p-0 transition-all duration-200 relative hover:scale-125 hover:border-text-primary/40 ${accent === acc.name ? "scale-130 border-text-primary shadow-[0_0_10px_var(--primary)]" : ""
+                }`}
               style={{ backgroundColor: acc.color }}
               onClick={() => setAccent(acc.name)}
               aria-label={`Switch to ${acc.name} accent`}
