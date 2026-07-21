@@ -33,6 +33,12 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
+        navigateFallbackDenylist: [
+          /^\/sitemap\.xml$/,
+          /^\/robots\.txt$/,
+          /^\/ads\.txt$/,
+          /^\/google[a-z0-9]+\.html$/,
+        ],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/api\.qrserver\.com\/.*/i,
