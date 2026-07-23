@@ -1,0 +1,1 @@
+import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./URLSEOStudio-C2rw5tgp.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`utm`})}export{r as default};

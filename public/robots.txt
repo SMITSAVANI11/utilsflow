@@ -1,4 +1,17 @@
+# robots.txt — UtilsFlow
+# https://utilsflow.web.app
+
+# Allow all crawlers full access
 User-agent: *
 Allow: /
 
+# Disallow non-content paths that should not be indexed
+Disallow: /registerSW.js
+Disallow: /workbox-*
+Disallow: /sw.js
+
+# Crawl-delay hint (optional, respected by some bots)
+# Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://utilsflow.web.app/sitemap.xml

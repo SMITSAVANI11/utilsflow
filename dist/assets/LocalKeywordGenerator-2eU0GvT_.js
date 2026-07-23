@@ -1,1 +1,0 @@
-import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./KeywordResearchStudio-C81OaFtN.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`local`})}export{r as default};

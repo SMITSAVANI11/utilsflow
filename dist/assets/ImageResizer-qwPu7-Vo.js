@@ -1,1 +1,0 @@
-import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./ImageEditor-DMQRr4-s.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-resizer`,title:`Image Resizer`,description:`Resize images online to exact pixel width and height, or scale by maintaining original aspect ratios client-side.`,defaultTab:`resize`})}export{r as default};

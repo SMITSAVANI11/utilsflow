@@ -1,1 +1,0 @@
-import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./SiteConfigurationStudio-Bm33FU93.js";var n=e();function r(){return(0,n.jsx)(t,{initialTab:`sitemap`})}export{r as default};

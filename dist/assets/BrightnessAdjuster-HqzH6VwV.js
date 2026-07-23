@@ -1,0 +1,1 @@
+import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./ImageEditor-COMLr1KU.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`brightness-adjuster`,title:`Brightness Adjuster`,description:`Adjust the brightness, contrast, and saturation of your images in real time using client-side filters.`,defaultTab:`adjust`})}export{r as default};

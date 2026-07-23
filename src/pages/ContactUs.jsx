@@ -30,7 +30,7 @@ export default function ContactUs() {
   return (
     <div className="min-h-screen pt-[100px] px-5 pb-[80px]" style={{ animation: "fadeIn 0.45s ease forwards" }}>
       <SEOHead
-        title="Contact Us — UtilsFlow"
+        title="Contact Us"
         description="Get in touch with the UtilsFlow team for support, feedback, or tool requests. We're happy to help."
         path="/contact"
       />

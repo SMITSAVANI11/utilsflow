@@ -1,1 +1,0 @@
-import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./ImageEditor-DMQRr4-s.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-sharpen`,title:`Image Sharpen`,description:`Enhance the clarity of blurry photos with an advanced client-side sharpening filter.`,defaultTab:`adjust`})}export{r as default};

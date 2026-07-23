@@ -1,0 +1,1 @@
+import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./ImageEditor-COMLr1KU.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-rotator`,title:`Image Rotator`,description:`Rotate your images 90 degrees or flip them horizontally and vertically. Preview and save instantly.`,defaultTab:`rotate`})}export{r as default};

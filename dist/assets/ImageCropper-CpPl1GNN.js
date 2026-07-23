@@ -1,1 +1,0 @@
-import{U as e}from"./vendor-zFK6u13P.js";import{t}from"./ImageEditor-DMQRr4-s.js";var n=e();function r(){return(0,n.jsx)(t,{toolId:`image-cropper`,title:`Image Cropper`,description:`Crop your images online with ease. Use aspect ratio presets (1:1, 16:9, 4:3) or custom boxes, and download client-side.`,defaultTab:`crop`})}export{r as default};

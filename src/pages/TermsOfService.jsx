@@ -182,7 +182,7 @@ export default function TermsOfService() {
   return (
     <div className="min-h-screen pt-[100px] px-5 pb-[80px]" style={{ animation: "fadeIn 0.45s ease forwards" }}>
       <SEOHead
-        title="Terms of Service — UtilsFlow"
+        title="Terms of Service"
         description="Read the UtilsFlow Terms of Service to understand the rules and conditions governing your use of our free online tools platform."
         path="/terms"
       />

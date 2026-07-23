@@ -36,7 +36,7 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen pt-[100px] px-5 pb-[80px]" style={{ animation: "fadeIn 0.45s ease forwards" }}>
       <SEOHead
-        title="About Us — UtilsFlow"
+        title="About Us"
         description="Learn about UtilsFlow, the free online utility platform offering 140+ browser-based tools with no login, no tracking, and no cost."
         path="/about"
       />

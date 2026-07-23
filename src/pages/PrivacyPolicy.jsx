@@ -234,7 +234,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen pt-[100px] px-5 pb-[80px]" style={{ animation: "fadeIn 0.45s ease forwards" }}>
       <SEOHead
-        title="Privacy Policy — UtilsFlow"
+        title="Privacy Policy"
         description="Read the UtilsFlow Privacy Policy to understand how we collect, use, and protect your information, including our use of Google AdSense."
         path="/privacy"
       />
